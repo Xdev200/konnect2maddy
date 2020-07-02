@@ -1,0 +1,99 @@
+$(function(){
+    
+            $('#submit_t').click(function(){
+               var name_t=$('#name_t').val();
+               var email_t=$('#email_t').val();
+               var message_t=$('#message_t').val();
+               var go=1;
+               if(name_t == "")
+               {
+                   $('#name_t').attr("placeholder", "Please Tell Me Your Name");
+                   $('#name_t').focus();
+                   go=0;
+                   
+                   return false;
+               }
+               
+               if(name_t.length>32)
+               {
+                   $('#name_t').attr("placeholder", "Name Must not exceed 32 character");
+                   $('#name_t').focus();
+                   go=0;
+                   
+                   return false;
+                   
+               }
+               
+               if(email_t=="")
+               {
+                   $('#email_t').attr("placeholder", "Your Email Please");
+                   $('#email_t').focus();
+                   go=0;
+                   
+                   return false;
+               }
+               
+               if(email_t.length>32)
+               {
+                   $('#email_t').attr("placeholder", "Email Must not exceed 32 character");
+                   $('#email_t').focus();
+                   go=0;
+                   
+                   return false;
+               }
+               
+              if(message_t=="")
+               {
+                   $('#message_t').attr("placeholder", "Please Say Something About Me");
+                   $("input::-webkit-input-placeholder").css({"color" : "red"});
+                   $('#message_t').focus();
+                   go=0;
+                   
+                   return false;
+               }
+               
+                if(message_t.length>200)
+               {
+                   $('#message_t').val("");
+                   $('#message_t').attr("placeholder", "Message Must not exceed 200 character");
+                   $('#message_t').focus();
+                   go=0;
+                   
+                   return false;
+               }
+               if(go)
+               {
+                   $.ajax({
+                       type:'post',
+                       url:'testimonial_action.php',
+                       enctype: 'multipart/form-data',
+                       data:{name_t:name_t,email_t:email_t,message_t:message_t},
+                       success:function(data)
+                       {
+                           
+                             if(data==0)
+                             {
+                                $('#email_t').val("");
+                                $('#email_t').attr("placeholder", "Please Enter Valid Email");
+                                $('#email_t').focus();
+                                
+                             }
+                             
+                             if(data==2)
+                             {
+                                 $('#img_err').val("");
+                                 $('#img_err').html("Please Upload Your Image");
+                                 $('#img_err').focus();
+                             }
+                             if(data==1)
+                             {
+                                alert("Thank You For Your Response.");
+                                 //var url = 'index.php';  
+                                 //$('#wssam2').load(' #wssam2');
+                                 location.reload();
+                             }
+                       },
+                   });
+               }
+            });
+        });

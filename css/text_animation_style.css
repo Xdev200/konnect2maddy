@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700|Open+Sans:800);
+
+/* Main stuff */
+.text {
+  fill: none;
+  stroke-width: 20;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear; }
+  .text:nth-child(5n + 1) {
+    stroke:#FF5252;/*#5C93C8; /*#F2385A;*/
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s; }
+  .text:nth-child(5n + 2) {
+    stroke:#FF5252;/*#E95546;/*#F5A503;*/
+    -webkit-animation-delay: -2.4s;
+    animation-delay: -2.4s; }
+  .text:nth-child(5n + 3) {
+    stroke:#FF5252;/*#46CFB0; /*#E9F1DF;*/
+    -webkit-animation-delay: -3.6s;
+    animation-delay: -3.6s; }
+  .text:nth-child(5n + 4) {
+    stroke:#FF5252;/*#8BC163; /*#56D9CD;*/
+    -webkit-animation-delay: -4.8s;
+    animation-delay: -4.8s; }
+  .text:nth-child(5n + 5) {
+    stroke:#FF5252;/*#D870A9; /*#3aa1bf;*/
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s; }
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400; } }
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400; } }
+
+/* Content */
+.content {
+/*	text-align: center;
+	position: relative;*/
+}
+
+/* Related demos */
+.content-related {
+/*	text-align: center;*/
+	font-weight: bold;
+	padding: 3em 0;
+}
+
+.content {
+  font: 800 14.5em/1  'Open Sans', Impact; 
+  font-size: 250px;
+}
+
+svg {
+  width: 100%;
+  margin: 0 auto 50px;
+  display: block;
+  text-transform: uppercase; }
+
+

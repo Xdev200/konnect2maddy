@@ -1,0 +1,60 @@
+@font-face {
+ font-family:The_Juke_Box; 
+ src: url('../fonts/The_Juke_Box-FFP.ttf'); /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+ font-family:CinnabarBrush;
+ src: url('../fonts/CinnabarBrush.ttf'); /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+ font-family:Kalemun_Rough;
+ src:url('../fonts/Kalemun Rough Free.otf'); /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+ font-family:copyb;
+ src:url('../fonts/COPYB.TTF'); /* TTF file for CSS3 browsers */
+}
+
+
+@font-face {
+ font-family:CircleCaps;
+ src:url('../fonts/CircleCaps.ttf'); /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+ font-family:CirclePixels;
+ src:url('../fonts/CirclePixels.ttf'); /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+ font-family:Circles_New;
+ src:url('../fonts/Circles_New.ttf'); /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+ font-family:circlethings;
+ src:url('../fonts/circlethings.ttf'); /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+ font-family:CropCircles;
+ src:url('../fonts/CropCircles.ttf'); /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+ font-family:DomeCircle;
+ src:url('../fonts/DomeCircle.otf'); /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+ font-family:SocialCircles;
+ src:url('../fonts/SocialCircles.otf'); /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+ font-family:segoe-ui-bold;
+ src:url('../fonts/segoe-ui-bold.ttf'); /* TTF file for CSS3 browsers */
+}

@@ -1,0 +1,17 @@
+/* triangle */
+#open, #close{
+    color:#ffffff;
+}
+
+.service-col
+{
+    border-right: 2px dotted gray;
+    border-left:2px dotted grey
+    
+}
+
+#circle_image{
+    width:220px;
+  
+}
+
